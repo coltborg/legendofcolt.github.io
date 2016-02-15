@@ -1,17 +1,18 @@
-<footer class="site-footer">
+<div class="footer">
+  <footer class="clearfix wrap" role="complementary" itemscope itemtype="https://schemaorg/WPFooter">
 
-  <div class="wrapper">
+      <div class="social">
+        <div class="icon">
+          <a href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter"></i> twitter</a>
+        </div>
+        <div class="icon">
+          <a href="http://codepen.io/{{ site.codepen_username }}"><i class="fa fa-codepen"></i> codepen</a>
+        </div>
+        <div class="icon">
+          <a href="https://github.com/{{ site.github_username }}"><i class="fa fa-github"></i> github</a>
+        </div>
+      </div>
 
-    <div class="social-links">
-      <ul>
-        <li><a href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter"></i> twitter</a></li>
-        <li><a href="http://codepen.io/{{ site.codepen_username }}"><i class="fa fa-codepen"></i> codepen</a></li>
-        <li><a href="https://github.com/{{ site.github_username }}"><i class="fa fa-github"></i> github</a></li>
-      </ul>
-    </div>
+      <div class="copyright">Copyright &copy; {{ 'now' | date: "%Y" }} Colt Borg All Rights Reserved.</div>
 
-    <div class="copyright">Copyright &copy; {{ 'now' | date: "%Y" }} Colt Borg All Rights Reserved.</div>
-
-  </div>
-
-</footer>
+  </footer>
