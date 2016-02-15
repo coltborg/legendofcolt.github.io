@@ -1,20 +1,17 @@
-<header class="site-header">
+<nav role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+  <h1 class="hidden">Main navigation</h1>
 
-  <div class="wrapper">
+  <div class="navicon closed"><i class="fa fa-navicon"></i></div>
 
-    <nav class="site-nav">
+  <ul class="navmenu" id="opennav">
+    {% for link in site.links %}
+      <li><a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>
 
-      <div>
-        {% for my_page in site.pages %}
-          {% if my_page.title %}
-          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-          {% endif %}
-        {% endfor %}
-      </div>
-    </nav>
+<header class="wrap clearfix" role="banner" itemscope itemtype="https://schema.org/WPHeader">
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
-  </div>
+  <h1 class="site-title mega"><a href="{{ site.baseurl }}/">&lt;coltborg&gt;</a></h1>
 
 </header>
