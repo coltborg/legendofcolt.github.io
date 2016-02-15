@@ -4,7 +4,7 @@ title: My Work
 permalink: /work/
 ---
 
-<section class="wrap clearfix">
+<section class="all-work wrap clearfix">
   <header class="post-header">
     <h1>{{ page.title }}</h1>
   </header>
