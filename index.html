@@ -5,41 +5,36 @@ layout: default
 <div class="home">
 
   <!-- section for introduction -->
-  <article class="site-section">
-    <div class="wrapper">
+  <article class="introduction">
+    <div class="wrap">
       <h1>Hey!</h1>
       <p>This is Colt. Colt is a web developer. Colt and the internet have a loving relationship. Colt thinks bow ties are cool. See Colt develop. 💩</p>
-
     </div>
   </article>
 
   <!-- seation for latest projects -->
-  <section class="site-section">
+  <section class="latest-projects wrap clearfix">
     <h1>latest projects</h1>
     <ul class="project-list">
       {% for project in site.categories['project'] | limit: 3 %}
         {% include project.html %}
       {% endfor %}
-
     </ul>
   </section>
 
   <!-- seation for latest articles -->
-  <section class="site-section site-section-last">
-   <div class="wrapper">
+  <section class="latest-articles">
+   <div class="wrap clearfix">
      <h1>latest articles</h1>
-     <ul class="post-list">
+     <ul class="article-list">
        {% for post in site.categories['blog'] | limit: 2 %}
-         <li class="post">
+         <li class="article">
            {% include post.html %}
          </li>
        {% endfor %}
-
      </ul>
+     <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
    </div>
   </section>
-
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
