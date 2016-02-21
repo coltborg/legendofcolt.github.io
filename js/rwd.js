@@ -52,6 +52,8 @@ jQuery(document).ready( function($){
 
   $('.navicon').click( function() {
 
+    console.log(event);
+
     if ( $('.navmenu').css('display') == 'none' ) {
 
       $('.navmenu').addClass('show');
