@@ -101,14 +101,34 @@ nav {
   margin-right: -5px;
 }
 
-/* collapsed nav child menu */
 .navmenu li ul {
   position: relative;
   left: 0;
 }
 
-@media (max-width: 37.5rem) { /* 500/16 */
+@include media-query($on-mobile) {
   .navmenu li {
     width: 25%;
+  }
+}
+
+/* Hero
+--------------------------------------------------------------*/
+/* All units set as em so we can easily resize all text */
+
+.hero {
+  text-align: center;
+  // background: lightgrey;
+}
+
+.hero-title {
+  font-size: 4.209em;
+  line-height: 7rem;
+}
+
+@include media-query($on-mobile) {
+  .hero-title {
+    font-size: 3.157em;
+    margin-top: 0;
   }
 }
