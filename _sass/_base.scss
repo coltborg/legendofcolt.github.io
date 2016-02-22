@@ -3,24 +3,59 @@ Base
 --------------------------------------------------------------*/
 
 // Set all elements to border-box
+// Document level adjustments
 html {
   box-sizing: border-box;
+  font-size: $base-font-size;
+  min-width: 16rem;
+  background-image: url(http://basehold.it/i/28); // Basehold it for vertical rhythm
+  color: blue;
+
+  @include media-query($on-xlarge) {
+    & {
+      color: pink;
+    }
+  }
+  @include media-query($on-large) {
+    & {
+      color: indigo;
+    }
+  }
+  @include media-query($on-xmedium) {
+    & {
+      color: green;
+    }
+  }
+  @include media-query($on-xmedium) {
+    & {
+      color: grey;
+    }
+  }
+  @include media-query($on-small) {
+    & {
+      color: purple;
+    }
+  }
+  @include media-query($on-xsmall) {
+    & {
+      color: red;
+    }
+  }
 }
+
+// @media (max-width: 900px) {
+//   html { font-size: 15px; }
+// }
+// @media (max-width: 400px) {
+//   html { font-size: 13px; }
+// }
 
 // Best practices, inherit instead of border-box.
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-
-/* Optional min width */
-html {
-  min-width: 20rem; /* 320/16 */
-  background-image: url(http://basehold.it/i/28); // Basehold it for vertical rhythm
-}
-
 body {
-  font-size: 1.25rem; /* 20/16 */
   line-height: 1.75;
 }
 

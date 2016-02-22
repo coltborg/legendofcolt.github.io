@@ -106,7 +106,7 @@ nav {
   left: 0;
 }
 
-@include media-query($on-mobile) {
+@include media-query($on-xsmall) {
   .navmenu li {
     width: 25%;
   }
@@ -126,7 +126,7 @@ nav {
   line-height: 7rem;
 }
 
-@include media-query($on-mobile) {
+@include media-query($on-xsmall) {
   .hero-title {
     font-size: 3.157em;
     margin-top: 0;

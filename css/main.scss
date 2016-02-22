@@ -8,30 +8,27 @@ $header-font: "Lato", sans-serif;
 $body-font: "Merriweather", serif;
 
 // Our variables
-$base-font-size:   16px;
+$base-font-size:   20px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
 // Width of the content area
 $content-width:    800px;
 
-$on-mobile:          37.5rem; /* 600/16 */
+$on-xsmall:              28.125em; /* 450px */
+$on-small:               37.5em; /* 600px */
+$on-medium:              50em; /* 800px */
+$on-xmedium:             62.5em; /* 1000px */
+$on-large:               75em; /* 1200px */
+$on-xlarge:              93.75em; /* 1500px */
 
 
 
 // Use media queries like this:
-// @include media-query($on-mobile) {
+// @include media-query($on-xsmall) {
 //     .wrapper {
 //         padding-right: $spacing-unit / 2;
 //         padding-left: $spacing-unit / 2;
