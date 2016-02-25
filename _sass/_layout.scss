@@ -87,10 +87,9 @@ nav {
 
 .navmenu li a {
   width: 100%;
-  line-height: 1.75rem;
-  padding: 1.437rem 2.1875rem 1.75rem;
+  padding: 1.25rem 2rem 1.5rem;
   border-bottom: 0;
-  border-top: 0.313rem solid transparent; /* 5/16 */
+  border-top: 0.25rem solid tomato; /* 5/16 */
 }
 
 .navmenu li:first-child {
@@ -98,7 +97,7 @@ nav {
 }
 
 .navmenu li {
-  margin-right: -5px;
+  margin-right: -6px;
 }
 
 .navmenu li ul {
@@ -118,17 +117,140 @@ nav {
 
 .hero {
   text-align: center;
-  // background: lightgrey;
+  background: lightgrey;
 }
 
 .hero-title {
-  font-size: 4.209em;
-  line-height: 7rem;
+  font-size: 4em;
+
+  & a {
+    border-bottom: none;
+  }
+
+  @include media-query($on-small) {
+    & {
+      font-size: 3em;
+      margin: 0;
+    }
+  }
 }
 
-@include media-query($on-xsmall) {
-  .hero-title {
-    font-size: 3.157em;
-    margin-top: 0;
+/* Main
+--------------------------------------------------------------*/
+
+main {
+  margin: 1.5rem 1.5rem;
+
+  @include media-query($on-medium) {
+    margin: 1.5rem 0.75rem;
   }
+}
+
+/* Introduction
+--------------------------------------------------------------*/
+
+.introduction {
+  margin: 1.5rem 0;
+  text-align: center;
+
+  & p {
+    text-align: left;
+  }
+}
+
+
+/* Latest Projects
+--------------------------------------------------------------*/
+
+.latest-projects {
+  text-align: center;
+  margin: 1.5rem 0 3rem;
+}
+
+.project-list {
+  margin: 1.5em 0em;
+  padding: 0;
+}
+
+.project {
+  list-style: none;
+  float: left;
+  width: 30%;
+  margin-top: 1.5rem;
+  margin-right: 5%;
+
+  &:last-of-type{
+    margin-right: 0;
+  }
+
+  @include media-query($on-xmedium) {
+    width: 47%;
+    margin-right: 6%;
+
+    &:nth-of-type(2) {
+      margin-right: 0;
+    }
+
+    &:last-of-type {
+      margin-left: auto;
+      margin-right: auto;
+      float: none;
+      clear: left;
+    }
+  }
+
+  @include media-query($on-medium) {
+    & {
+      width: 100%;
+      margin-right: 0;
+      float: none;
+    }
+  }
+}
+
+/* Latest Articles
+--------------------------------------------------------------*/
+
+.latest-articles h1 {
+  text-align: center;
+}
+
+.article-list {
+  margin: 1.5em 0em;
+  padding: 0;
+}
+
+.article {
+  list-style: none;
+  float: left;
+  margin-top: 1.5rem;
+  width: 47%;
+  margin-right: 6%;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  & p {
+    text-align: left;
+  }
+
+  @include media-query($on-medium) {
+    & {
+      width: 100%;
+      margin-right: 0;
+      float: none;
+    }
+  }
+
+  & h1 {
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+
+.post-read-more-link {
+  text-align: center;
+  display: inline-block;
 }

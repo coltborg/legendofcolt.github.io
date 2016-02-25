@@ -8,47 +8,8 @@ html {
   box-sizing: border-box;
   font-size: $base-font-size;
   min-width: 16rem;
-  background-image: url(http://basehold.it/i/28); // Basehold it for vertical rhythm
-  color: blue;
-
-  @include media-query($on-xlarge) {
-    & {
-      color: pink;
-    }
-  }
-  @include media-query($on-large) {
-    & {
-      color: indigo;
-    }
-  }
-  @include media-query($on-xmedium) {
-    & {
-      color: green;
-    }
-  }
-  @include media-query($on-xmedium) {
-    & {
-      color: grey;
-    }
-  }
-  @include media-query($on-small) {
-    & {
-      color: purple;
-    }
-  }
-  @include media-query($on-xsmall) {
-    & {
-      color: red;
-    }
-  }
+  // background-image: url(http://basehold.it/i/30); // Basehold it for vertical rhythm
 }
-
-// @media (max-width: 900px) {
-//   html { font-size: 15px; }
-// }
-// @media (max-width: 400px) {
-//   html { font-size: 13px; }
-// }
 
 // Best practices, inherit instead of border-box.
 *, *:before, *:after {
@@ -56,7 +17,7 @@ html {
 }
 
 body {
-  line-height: 1.75;
+  line-height: $base-line-height;
 }
 
 // Make images responsive to container
@@ -65,9 +26,14 @@ img {
   height: auto;
 }
 
+figure {
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+
 // Add transparent bottom border to all links
 a {
-  border-bottom: 5px solid transparent;
+  border-bottom: 0.15rem solid transparent;
 }
 
 // Remove default text decoration of links
@@ -80,50 +46,46 @@ a:visited {
 a:hover,
 a:active {
   text-decoration: none;
+  border-bottom: 0.15rem solid blue;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 1.75rem 0;
+  margin: 1.5rem 0;
   font-weight: inherit;
-  line-height: 1.2;
 }
 
 h1 {
-  font-size: 3.157em;
-  line-height: 5.25rem;
+  font-size: 3em;
+
+  @include media-query($on-small) {
+    h1 {
+      font-size: 2em;
+    }
+  }
 }
 
 h2 {
-  font-size: 2.369em;
-  margin: 0.625em 0;
+  font-size: 2em;
 }
 
 h3 {
-  font-size: 1.777em;
-  margin: 1.313em 0;
+  font-size: 2em;
 }
 
 h4 {
-  font-size: 1.333em;
-  margin: 1.313em 0;
+  font-size: 1.5em;
 }
 
 h5 {
-  font-size: 1.125em; /* 18/16 */
-  margin: 1.313em 0;
+  font-size: 1.25em; /* 18/16 */
 }
 
 h6 {
   font-size: 1em; /* 16/16 */
-  margin: 0.75em 0;
 }
 
 p {
-  margin-bottom: 1.3em;
-}
-
-small, .font-small {
-  font-size: 0.75em;
+  margin: 0 0 1.5em;
 }
 
 .clearfix:before,
@@ -139,20 +101,26 @@ small, .font-small {
   display: none !important;
 }
 
-.wrap {
-  max-width: 75rem; /* 1200/16 */
+.introduction-wrap {
+  max-width: 25rem;
   width: 100%;
   margin: 0 auto;
 }
 
-@media (max-width: 79rem) { /* 1264/16 */
-  .wrap {
-    padding: 0 2rem; /* 32/16 */
-  }
-}
+.wrap {
+  max-width: 75rem;
+  width: 100%;
+  margin: 0 auto;
 
-@media (max-width: 37.5rem) { /* 600/16 */
-  .wrap {
-    padding: 0 1.5rem; /* 24/16 */
+  @include media-query($on-large) {
+    & {
+      padding: 0 2rem;
+    }
+  }
+
+  @include media-query($on-small) {
+    & {
+      padding: 0 1.5rem;
+    }
   }
 }
