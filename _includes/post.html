@@ -6,4 +6,6 @@
 <p>
   {{ post.content | strip_html | strip_newlines | truncate: 200 }}
 </p>
-<a class="post-read-more-link" href="{{ post.url | prepend: site.baseurl }}">read more...</a>
+<div class="readMore-container">
+  <a class="readMore" href="{{ post.url | prepend: site.baseurl }}">read more...</a>
+</div>

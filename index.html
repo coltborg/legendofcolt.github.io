@@ -26,14 +26,14 @@ layout: default
   <section class="latest-articles">
    <div class="wrap clearfix">
      <h1>latest articles</h1>
-     <ul class="article-list">
+     <ul class="article-list clearfix">
        {% for post in site.categories['blog'] | limit: 2 %}
          <li class="article">
            {% include post.html %}
          </li>
        {% endfor %}
      </ul>
-     <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+     <p class="rss-subscribe clearfix">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
    </div>
   </section>
 
