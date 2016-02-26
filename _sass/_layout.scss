@@ -258,3 +258,33 @@ main {
   margin: 1.5rem 0;
   float: right;
 }
+
+/* Footer
+--------------------------------------------------------------*/
+
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  background: lightgrey;
+}
+
+.icon {
+  font-size: 2.5em;
+  display: inline-block;
+  margin-right: 1.5rem;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.copyright {
+  margin: 1.5rem 0;
+  font-size: 0.8em;
+
+  @include media-query($on-xsmall) {
+    & {
+      font-size: 0.6em;
+    }
+  }
+}
