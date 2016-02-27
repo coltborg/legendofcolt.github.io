@@ -18,4 +18,24 @@ layout: default
   <div class="post-body">
     {{ content }}
   </div>
+
 </article>
+
+<!-- <section class="related-posts">
+  <h1>related posts</h1>
+  <ul class="related-posts-list">
+    {% for post in site.categories['blog'] %}
+      {% if post.url != page.url %}
+        {% for tag in page.tags %}
+          {% assign count = 0 %}
+          {% if post.tags contains tag %}
+            <li class="article">
+              {% include post.html %}
+            </li>
+            {% break %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+  </ul>
+</section> -->
