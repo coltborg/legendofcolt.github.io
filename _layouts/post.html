@@ -19,7 +19,15 @@ layout: default
     {{ content }}
   </div>
 
+  <footer>
+    <a href="/blog"><i class="fa fa-arrow-left"></i> Back to all articles</a>
+
+    <div class="kudos" data-amount="0" data-url="{{ page.url | prepend: site.baseurl | prepend: site.url }}"></div>
+  </footer>
+
 </article>
+
+
 
 <!-- <section class="related-posts">
   <h1>related posts</h1>
