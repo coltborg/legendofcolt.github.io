@@ -8,7 +8,7 @@ html {
   box-sizing: border-box;
   font-size: $base-font-size;
   min-width: 16rem;
-  background-image: url(http://basehold.it/i/30); // Basehold it for vertical rhythm
+  // background-image: url(http://basehold.it/i/30); // Basehold it for vertical rhythm
 }
 
 // Best practices, inherit instead of border-box.
@@ -99,6 +99,29 @@ p {
 
 .hidden {
   display: none !important;
+}
+
+.offscreen {
+  position:absolute;
+  left:-1000px;
+  top:-1000px;
+  width:1px;
+  height:1px;
+  text-align: left;
+  overflow:hidden;
+}
+
+.offscreen:focus,
+.offscreen:active,
+.offscreen:hover {
+  position:absolute;
+  left:0;
+  top:0;
+  width:auto;
+  height:auto;
+  overflow:visible;
+  background-color: transparent;
+  border: 1px dotted #000;
 }
 
 .introduction-wrap {
