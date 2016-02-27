@@ -109,6 +109,10 @@ nav {
   .navmenu li {
     width: 25%;
   }
+
+  .navmenu li a {
+    padding: 1.25rem 0rem 1.5rem;
+  }
 }
 
 /* Hero
@@ -127,7 +131,7 @@ nav {
     border-bottom: none;
   }
 
-  @include media-query($on-small) {
+  @include media-query($on-medium) {
     & {
       font-size: 3em;
       margin: 0;
@@ -170,6 +174,15 @@ main {
 .project-list {
   margin: 1.5em 0em;
   padding: 0;
+
+  // @include media-query($on-xmedium) {
+  //   &:nth-last-child(1) {
+  //     margin-left: auto;
+  //     margin-right: auto;
+  //     float: none;
+  //     clear: left;
+  //   }
+  // }
 }
 
 .project {
@@ -179,23 +192,22 @@ main {
   margin-top: 1.5rem;
   margin-right: 5%;
 
-  &:last-of-type{
-    margin-right: 0;
+  @include media-query($on-xlarge) {
+    &:nth-of-type(3n) {
+      margin-right: 0;
+    }
   }
 
   @include media-query($on-xmedium) {
     width: 47%;
     margin-right: 6%;
 
-    &:nth-of-type(2) {
-      margin-right: 0;
+    &:nth-of-type(3n) {
+      margin-right: 6%;
     }
 
-    &:last-of-type {
-      margin-left: auto;
-      margin-right: auto;
-      float: none;
-      clear: left;
+    &:nth-of-type(2n) {
+      margin-right: 0;
     }
   }
 
@@ -205,6 +217,15 @@ main {
       margin-right: 0;
       float: none;
     }
+  }
+}
+
+@include media-query($on-xmedium) {
+  .latest-projects .project:nth-of-type(3) {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    clear: left;
   }
 }
 
@@ -293,6 +314,48 @@ main {
 --------------------------------------------------------------*/
 
 .page {
-  max-width: 40rem;
+  max-width: 35rem;
+  margin: 0 auto;
+}
+
+.cta {
+  text-align: center;
+  display: block;
+}
+
+/* All Articles
+--------------------------------------------------------------*/
+
+.all-posts {
+  max-width: 35rem;
+  margin: 0 auto;
+}
+
+.post-list {
+  padding: 0;
+}
+
+.post {
+  list-style: none;
+
+  & h1 {
+    font-size: 2em;
+    margin-bottom: 0;
+  }
+}
+
+/* Single Work
+--------------------------------------------------------------*/
+
+.single-project {
+  max-width: 35rem;
+  margin: 0 auto;
+}
+
+/* Single Blog
+--------------------------------------------------------------*/
+
+.single-post {
+  max-width: 35rem;
   margin: 0 auto;
 }
