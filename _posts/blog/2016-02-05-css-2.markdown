@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Silvas nova"
+title:  "CSS 2"
 date:   2016-01-01 09:55:38 -0600
 categories: blog
+tags: css
 ---
 You’ll find this post in your `_posts` directo_ry. Go ahead and edit it a_nd re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2016-02-05 12:01:37 -0600
+title:  "HTML 4"
+date:   2016-02-22 12:01:37 -0600
 categories: blog
+tags: html
 ---
 You’ll find this post in your `_posts` directo_ry. Go ahead and edit it a_nd re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
