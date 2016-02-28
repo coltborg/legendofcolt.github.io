@@ -71,6 +71,7 @@ p {
 a {
   color: $green;
   font-weight: 400;
+
   @include animate-trans(all, 0.4s, cubic-bezier(0, 0, 0.2, 1));
 
   &:hover,
@@ -117,26 +118,8 @@ a {
 // Latest Projects
 
 .project {
-  @include animate-trans(all, 0.4s, cubic-bezier(0.68, -0.55, 0.27, 1.55));
-
-  &:hover {
-    // background: $backgroundDarkestGray;
-  }
-
-  & figure {
-    // overflow: hidden;
-  }
-
   & .project-caption {
     font-family: $header-font;
-  }
-
-  & img {
-    @include animate-trans(all, 0.4s, cubic-bezier(0, 0, 0.2, 1));
-
-    &:hover {
-      // box-shadow: 0 0 10px $green;
-    }
   }
 }
 
