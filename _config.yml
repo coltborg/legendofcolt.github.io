@@ -26,9 +26,9 @@ links:
     - title: about
       url: /about
     - title: work
-      url: /work
+      url: /work/
     - title: blog
-      url: /blog
+      url: /blog/
 
 # Build settings
 markdown: kramdown
