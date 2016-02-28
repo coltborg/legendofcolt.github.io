@@ -5,7 +5,11 @@
 
   <ul class="navmenu" id="opennav">
     {% for link in site.links %}
-      <li><a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a></li>
+      {% if page.url == link.url %}
+        <li><a class="active" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a></li>
+      {% else %}
+        <li><a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a></li>
+      {% endif %}
     {% endfor %}
   </ul>
 </nav>
