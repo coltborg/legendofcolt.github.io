@@ -57,7 +57,7 @@ h1 {
   font-size: 3em;
 
   @include media-query($on-small) {
-    h1 {
+    & {
       font-size: 2em;
     }
   }
@@ -85,6 +85,10 @@ h6 {
 
 p {
   margin: 0 0 1.5em;
+
+  @include media-query($on-small) {
+    font-size: 0.9em;
+  }
 }
 
 .clearfix:before,
