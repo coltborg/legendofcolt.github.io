@@ -93,11 +93,11 @@ nav {
 }
 
 .navmenu li:first-child {
-  margin-left: -6px;
+  margin-left: -4px;
 }
 
 .navmenu li {
-  margin-right: -6px;
+  margin-right: -4px;
 }
 
 .navmenu li ul {
@@ -105,7 +105,7 @@ nav {
   left: 0;
 }
 
-@include media-query($on-xsmall) {
+@include media-query($on-small) {
   .navmenu li {
     width: 25%;
   }
@@ -367,6 +367,14 @@ main {
 
 .single-post footer {
   margin: 1.5rem 0;
+}
+
+.post-body figure {
+  margin: 0.5rem 1rem 1rem;
+
+  & figcaption {
+    font-size: 0.7rem;
+  }
 }
 
 .kudos {
