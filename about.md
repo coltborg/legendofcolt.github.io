@@ -8,4 +8,6 @@ My name is Colt, and I am a bearded, cheeky web developer with a yearning for cr
 
 I’m from Texas, so I can shoot just about anything: guns, arrows, or the breeze. I played in a jazz band and a metal band at the same time for three years. I use YouTube to keep up to date. When I am not on YouTube, I build websites, and freelance in my spare time. Questions? Comments? Concerns? Job offers? Hit me up on social media!
 
-<a href="/work/" class="cta">Check out my portfolio</a>
+<div class="cta-container">
+  <a class="cta" href="{{ /work/ | prepend: site.baseurl }}">Check out my portfolio</a>
+</div>

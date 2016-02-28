@@ -13,4 +13,144 @@ $greenLight:                        #90E2CF;
 
 // Google fonts
 $header-font: "Lato", sans-serif;
-$body-font: "Merriweather", serif;
+$body-font: "Lato", sans-serif;
+
+// Mixins
+
+@mixin ghost-btn() {
+  color: $whiteLight;
+  border: 0.15rem solid $whiteLight;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.8rem;
+
+  &:hover,
+  &:focus {
+    color: $green;
+    border-color: $green;
+  }
+}
+
+@mixin dark-box() {
+  background: $backgroundDarkestGray;
+  padding: 1rem;
+  border-top: 0.25rem solid $green;
+}
+
+// General Styles
+body {
+  background: $backgroundGray;
+  font-family: $body-font;
+  font-weight: 300;
+  color: $white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font;
+  font-weight: 700;
+}
+
+a {
+  color: $green;
+  font-weight: 400;
+
+  &:hover,
+  &:focus {
+    color: $greenDark;
+    border-bottom-color: $greenDark;
+  }
+}
+
+// Nav Menu
+
+.navmenu li a {
+  color: $whiteDark;
+  font-weight: 400;
+
+  &:hover,
+  &.active:hover {
+    color: $green;
+    background: $backgroundDarkGray;
+    border-top-color: $green;
+  }
+
+  &.active {
+    color: $green;
+    background: $backgroundDarkestGray;
+    border-top-color: $green;
+  }
+}
+
+// Header
+
+.hero {
+  background: $backgroundDarkestGray;
+}
+
+.logo {
+  color: $whiteDark;
+}
+
+.logo-brackets {
+  color: $green;
+}
+
+// Latest Projects
+
+.project img {
+  border-top: 0.25rem solid $backgroundDarkestGray;
+}
+
+.project-caption {
+  font-family: $header-font;
+}
+
+.project:hover {
+  background: $backgroundDarkestGray;
+}
+
+// Latest Articles
+
+.article {
+  @include dark-box();
+
+  & p {
+    font-size: 0.9rem;
+  }
+}
+
+.cta-container {
+  padding: 0.25rem 0;
+  text-align: center;
+}
+
+.cta {
+  display: inline-block;
+  @include ghost-btn();
+}
+
+// About
+
+
+// Blog
+
+.post {
+  margin-bottom: 1.5rem;
+  @include dark-box();
+}
+
+
+
+// Footer
+
+.footer {
+  background: $backgroundDarkestGray;
+}
+
+.social a {
+  border-bottom: none;
+}
