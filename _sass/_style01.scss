@@ -128,6 +128,10 @@ a {
   text-align: center;
 }
 
+.cta-container.return {
+  text-align: left;
+}
+
 .cta {
   display: inline-block;
   @include ghost-btn();
