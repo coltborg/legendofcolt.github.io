@@ -1,11 +1,13 @@
-<h1>
-  <a href="{{ post.url | prepend: site.baseurl }}">
-    {{ post.title }}
-  </a>
-</h1>
-<p>
-  {{ post.content | strip_html | strip_newlines | truncate: 200 }}
-</p>
-<div class="cta-container">
-  <a class="cta" href="{{ post.url | prepend: site.baseurl }}">read more...</a>
-</div>
+<aside>
+  <h1>
+    <a href="{{ post.url | prepend: site.baseurl }}">
+      {{ post.title }}
+    </a>
+  </h1>
+  <p>
+    {{ post.content | strip_html | strip_newlines | truncate: 200 }}
+  </p>
+  <div class="cta-container">
+    <a class="cta" href="{{ post.url | prepend: site.baseurl }}">read more...</a>
+  </div>
+</aside>
