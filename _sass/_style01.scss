@@ -115,6 +115,19 @@ a {
   color: $green;
 }
 
+.introduction-wrap p {
+  margin-bottom: 0.5rem;
+}
+
+.animated-line {
+  margin: 0;
+}
+
+#js-text-change {
+  color: $green;
+  @include animate-trans(opacity, 0.2s, cubic-bezier(0.22, 0.61, 0.36, 1));
+}
+
 // Latest Projects
 
 .project {

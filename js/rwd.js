@@ -54,4 +54,34 @@ jQuery(document).ready( function($){
     }
   });
 
+  /* Text Change
+  ------------------------------ */
+
+  // If #js-text-change is on page
+  if( $("#js-text-change").length > 0 ) {
+
+    var textArray = [
+      "aspire",
+      "design",
+      "imagine",
+      "develop"
+    ];
+    var curTextIndex = -1;
+
+    var intervalID = setInterval(function() {
+      ++curTextIndex;
+      if (curTextIndex >= textArray.length) {
+          curTextIndex = 0;
+      }
+
+      $("#js-text-change").fadeOut(function() {
+        $(this).text(textArray[curTextIndex]).css('opacity', 0);
+      }).fadeIn(function() {
+        $(this).text(textArray[curTextIndex]).css('opacity', 1);
+      });
+
+    }, 6000);
+
+  } // end if
+
 });
