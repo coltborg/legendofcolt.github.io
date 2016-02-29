@@ -162,8 +162,18 @@ a {
   @include ghost-btn();
 }
 
-// About
+// Pages
 
+.page-header {
+  text-align: center;
+}
+
+// All Pages
+
+.all-work .post-header,
+.all-posts .post-header {
+  text-align: center;
+}
 
 // Blog
 
