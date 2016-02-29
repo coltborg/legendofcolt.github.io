@@ -1,12 +1,14 @@
 ---
 layout: default
-title: My Work
+title: My Work - Colt Borg
+description: A collection of Colt Borg's portfolio
+header: my work
 permalink: /work/
 ---
 
 <section class="all-work wrap clearfix">
   <header class="post-header">
-    <h1>{{ page.title }}</h1>
+    <h1>{{ page.header }}</h1>
   </header>
 
   <ul class="project-list">

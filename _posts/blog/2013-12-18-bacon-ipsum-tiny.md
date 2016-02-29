@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Bacon Ipsum (Tiny)"
+description: Blog meta tag
 categories: blog
 ---
 

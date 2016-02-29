@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Address to the Nation"
+description: Blog meta tag
 categories: blog
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Adventure of the Cardboard Box"
+description: Blog meta tag
 author: "Arthur Conan Doyle"
 categories: blog
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "CSS 2"
+description: Blog meta tag
 date:   2016-01-01 09:55:38 -0600
 categories: blog
 tags: css

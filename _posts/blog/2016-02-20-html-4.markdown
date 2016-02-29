@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "HTML 4"
+description: Blog meta tag
 date:   2016-02-22 12:01:37 -0600
 categories: blog
 tags: html

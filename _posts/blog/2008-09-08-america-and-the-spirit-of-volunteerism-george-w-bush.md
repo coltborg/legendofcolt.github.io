@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "America and the Spirit of Volunteerism"
+description: Blog meta tag
 categories: blog
 ---
 

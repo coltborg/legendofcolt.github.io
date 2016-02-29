@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Syntax highlighting"
+description: Blog meta tag
 date:   2016-02-27 09:55:38 -0600
 categories: blog
 tags: syntax

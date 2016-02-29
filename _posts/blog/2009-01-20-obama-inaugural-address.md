@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Obama Inaugural Address"
+description: Blog meta tag
 categories: blog
 ---
 
