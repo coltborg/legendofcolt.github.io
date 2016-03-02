@@ -80,7 +80,7 @@ jQuery(document).ready( function($){
         $(this).text(textArray[curTextIndex]).css('opacity', 1);
       });
 
-    }, 5000);
+    }, 4000);
 
   } // end if
 
