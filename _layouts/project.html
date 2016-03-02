@@ -9,8 +9,11 @@ layout: default
       {{ page.date | date: "%b %-d, %Y" }}
     </p>
     {% if page.featured_image %}
-      <div class="post-image">
-        <img src="{{ site.baseurl }}{{ page.featured_image }}" alt="{{ page.title }} featured image" />
+      <div class="post-image clearfix">
+        <a href="{{ page.project_url }}" target="_blank">
+          <img src="{{ site.baseurl }}{{ page.featured_image }}" alt="{{ page.title }} featured image" />
+        </a>
+        <a href="{{ page.project_url }}" class="post-url" target="_blank">{{ page.project_url }}</a>
       </div>
     {% endif %}
   </header>

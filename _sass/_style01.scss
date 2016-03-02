@@ -192,6 +192,15 @@ a {
   color: $whiteDark;
 }
 
+.post-image a {
+  border-bottom-color: transparent;
+}
+
+.post-url {
+  float: right;
+  font-size: 0.8em;
+}
+
 .post-body figure figcaption {
   color: $whiteDark;
 }
