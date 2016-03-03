@@ -132,6 +132,18 @@ a {
 // Latest Projects
 
 .project {
+
+  & .project-thumbnail {
+    -webkit-filter: grayscale(85%);
+    filter: grayscale(85%);
+    @include animate-trans(all, 0.4s, ease);
+
+    &:hover {
+      -webkit-filter: none;
+      filter: none;
+    }
+  }
+
   & .project-caption {
     font-family: $header-font;
     text-align: center;
