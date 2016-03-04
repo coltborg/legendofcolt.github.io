@@ -8,4 +8,4 @@ project_url: "http://oharadentistry.com/"
 categories: project
 ---
 
-By creating a clean and reusable backend area, now the user can easily create and edit new employee pages. Started with [underscores](http://underscores.me/) starter theme for WordPress.
+By creating a clean and reusable backend area, now the user can easily create and edit new employee pages. Built with [underscores](http://underscores.me/) starter theme for WordPress.
