@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Dear Internet"
-description: My first blog post on coltborg.com
+description: My first blog post on coltborg.com.
 twitter-card-img: "/images/twitter-card-Dear-Internet@2x.png"
 date:   2016-03-02
 categories: blog
