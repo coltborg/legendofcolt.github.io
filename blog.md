@@ -1,15 +1,14 @@
 ---
 layout: default
-title: All Articles - Colt Borg
+title: All Articles
 description: A blog about web development and life
-header: all articles
 permalink: /blog/
 ---
 
 <section class="all-posts">
   <div class="wrap clearfix">
     <header class="post-header">
-      <h1>{{ page.header }}</h1>
+      <h1>{{ page.title }}</h1>
     </header>
 
     <ul class="post-list">

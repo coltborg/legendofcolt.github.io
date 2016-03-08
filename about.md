@@ -1,8 +1,8 @@
 ---
 layout: page
-title: About - Colt Borg
+title: About
 description: About Colt Borg. What he does and who he is
-header: about
+
 permalink: /about
 ---
 
