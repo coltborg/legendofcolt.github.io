@@ -2,6 +2,7 @@
 layout: default
 title: All Articles
 description: A blog about web development and life
+twitter-card-img: "/images/twitter-card-blog@2x.png"
 permalink: /blog/
 ---
 

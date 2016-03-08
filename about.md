@@ -2,7 +2,7 @@
 layout: page
 title: About
 description: About Colt Borg. What he does and who he is
-
+twitter-card-img: "/images/twitter-card-about@2x.png"
 permalink: /about
 ---
 

@@ -2,6 +2,7 @@
 layout: default
 title: My Work
 description: A collection of Colt Borg's portfolio
+twitter-card-img: "/images/twitter-card-work@2x.png"
 permalink: /work/
 ---
 
