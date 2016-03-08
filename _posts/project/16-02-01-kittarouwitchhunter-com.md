@@ -1,7 +1,8 @@
 ---
 layout: project
-title:  "kittarou witch hunter"
+title:  "Kittarou Witch Hunter"
 description: A portfolio project using WordPress.
+twitter-card-img: "/images/twitter-card-work@2x.png"
 date:   2016-02-01
 featured_image: "/images/kittarou-project-thumbnail.png"
 project_url: "http://kittarouwitchhunter.com/"

@@ -1,7 +1,8 @@
 ---
 layout: project
-title:  "whoa hoss"
+title:  "Whoa Hoss"
 description: A portfolio project using WordPress.
+twitter-card-img: "/images/twitter-card-work@2x.png"
 date:   2016-01-01
 featured_image: "/images/whoahoss-project-thumbnail.png"
 project_url: "http://whoahoss.com/"

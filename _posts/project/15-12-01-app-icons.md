@@ -1,7 +1,8 @@
 ---
 layout: project
-title:  "app icons"
+title:  "App Icons"
 description: Custom icons using sketch.
+twitter-card-img: "/images/twitter-card-work@2x.png"
 date:   2015-12-01
 featured_image: "/images/appicons-project-thumbnail.png"
 categories: project
