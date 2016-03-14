@@ -5,6 +5,7 @@ description: A portfolio project using WordPress.
 twitter-card-img: "/images/twitter-card-work@2x.png"
 date:   2016-02-01
 featured_image: "/images/kittarou-project-thumbnail.png"
+featured_image_thumb: "/images/kittarou-project-thumbnail@0.5x.png"
 project_url: "http://kittarouwitchhunter.com/"
 categories: project
 ---

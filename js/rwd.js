@@ -40,20 +40,6 @@ jQuery(document).ready( function($){
     }
   }, 200);
 
-  /* Init KudosPlease
-  ------------------------------ */
-
-  new KudosPlease({
-    el : '.kudos',
-    duration : 1500,
-    persistent : true,
-    status : {
-      alpha: '',
-      beta: '',
-      gamma: ''
-    }
-  });
-
   /* Text Change
   ------------------------------ */
 
@@ -84,13 +70,18 @@ jQuery(document).ready( function($){
 
   } // end if
 
-
-  /* Change project thumbnail src to half size
+  /* Init KudosPlease
   ------------------------------ */
 
-  $('.project-thumbnail').attr('src', function(index, attr) {
-    return attr.replace(/\.[^.]*$/, '@0.5x$&');
+  new KudosPlease({
+    el : '.kudos',
+    duration : 1500,
+    persistent : true,
+    status : {
+      alpha: '',
+      beta: '',
+      gamma: ''
+    }
   });
-
 
 });

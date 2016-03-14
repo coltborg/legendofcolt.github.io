@@ -5,6 +5,7 @@ description: A portfolio project using WordPress.
 twitter-card-img: "/images/twitter-card-work@2x.png"
 date:   2016-03-01
 featured_image: "/images/ohara-dentistry-project-thumbnail.png"
+featured_image_thumb: "/images/ohara-dentistry-project-thumbnail@0.5x.png"
 project_url: "http://oharadentistry.com/"
 categories: project
 ---
