@@ -84,4 +84,13 @@ jQuery(document).ready( function($){
 
   } // end if
 
+
+  /* Change project thumbnail src to half size
+  ------------------------------ */
+
+  $('.project-thumbnail').attr('src', function(index, attr) {
+    return attr.replace(/\.[^.]*$/, '@0.5x$&');
+  });
+
+
 });
