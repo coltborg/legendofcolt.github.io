@@ -19,7 +19,7 @@ twitter-card-img: "/images/twitter-card-home@2x.png"
   <section class="latest-projects wrap clearfix">
     <h1>latest projects</h1>
     <ul class="project-list">
-      {% for project in site.categories['project'] | limit: 3 %}
+      {% for project in site.categories['project'] limit: 3 %}
         {% include project.html %}
       {% endfor %}
     </ul>
@@ -30,7 +30,7 @@ twitter-card-img: "/images/twitter-card-home@2x.png"
    <div class="wrap clearfix">
      <h1>latest articles</h1>
      <ul class="article-list clearfix">
-       {% for post in site.categories['blog'] | limit: 2 %}
+       {% for post in site.categories['blog'] limit: 2 %}
          <li class="article">
            {% include post.html %}
          </li>
